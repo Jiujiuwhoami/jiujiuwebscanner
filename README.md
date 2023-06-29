@@ -1,22 +1,26 @@
 # jiujiuwebscanner
 
-## 一、初衷
+## 初衷
+
 * 没找到集成化扫描的工具，遂动手写了一个框架
 * poc后面扩展
 
-## 二、工具说明
+## 工具说明
 
-### 三、简介
+### 一、简介
+
 * poc主要测试web可能存在的漏洞
 
-### 四、工具环境
+### 二、工具环境
+
 * 完全的python环境
 
-### 五、使用方式
+### 三、使用方式
+
 * 命令行
 * GUI
 
-### 六、使用详解
+### 四、使用详解
 
 #### 1、命令行利用方式
 *进入 jiujiuwebscanner.py 文件所在目录，运行cmd程序
@@ -49,10 +53,13 @@ python jiujiuwebscanner.py --gui
 * 选择输入单个url 或者 引用 url 文件
 * 选择单个poc文件 或者 pocs 目录批量扫描
 * 自由组合利用方式，单个扫描和批量扫描不能同时使用
+#### 3、文件保存
+* 扫描完成文件会自动保存在当前目录的名为result.txt的文件中，如果文件存在，则需要删除该文件，否则会导致扫描结果无法保存。
 
-### 七、POC
+### POC 说明
 
-#### 1、编写格式（.py）
+*所有poc脚本都规范放在pocs文件中
+#### 一、编写格式（.py）
 ```
 import requests
 
@@ -78,7 +85,7 @@ def detect_vulnerability(target):
     return result
 ```
 *result{} 作为GUI面板漏洞检测结果和命令行检测结果的输出
-#### 2、案例
+#### 二、案例
 ```
 import requests
 
@@ -102,6 +109,12 @@ def detect_vulnerability(target):
     return result
 ```
 
-### 八、说明
+### 其他
+
 * 含有AI创作部分
 * 期望同道者可添加提交POC
+
+### 部分图鉴
+![](https://cdn.jsdelivr.net/gh/JiujiuPictures/pictures@main/blog%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-06-29%20203718.png)
+
+![](https://cdn.jsdelivr.net/gh/JiujiuPictures/pictures@main/blog%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-06-29%20210323.png)
