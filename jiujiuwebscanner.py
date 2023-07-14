@@ -21,7 +21,6 @@ def main():
     scanner = vulscanner.VulnerabilityScanner(targets=args.targets, target_files=args.target_file,files=args.files, files_pocs=args.poc_folder,threads=args.threads)
     if args.gui:
         app = wx.App()
-        
         frame = vulscannergui.VulnerabilityScannerGUI(None, title="jiujiuwebscanner")
         frame.Show()
         app.MainLoop()

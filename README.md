@@ -118,3 +118,7 @@ def detect_vulnerability(target):
 ![](https://cdn.jsdelivr.net/gh/JiujiuPictures/pictures@main/blog%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-06-29%20203718.png)
 
 ![](https://cdn.jsdelivr.net/gh/JiujiuPictures/pictures@main/blog%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-06-29%20210323.png)
+
+## 鸣谢
+
+* springBoot漏洞检测poc在<https://github.com/rabbitmask/SB-Actuator>项目基础上修改。
